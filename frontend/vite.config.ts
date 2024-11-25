@@ -17,6 +17,18 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      '/admin': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+    },
+  },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
   },
