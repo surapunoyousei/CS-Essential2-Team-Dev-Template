@@ -9,7 +9,7 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: resolve(__dirname, "../django_react/react_app/static/js"),
+    outDir: resolve(__dirname, "../dist/static/js"),
     rollupOptions: {
       output: {
         entryFileNames: "bundle.js",

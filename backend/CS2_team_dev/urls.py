@@ -20,6 +20,6 @@ from api import views as api_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app/', include('app.urls')),
+    path('', include('app.urls')),
     path('api/', include(api_views.router.urls)), #追加
 ]
