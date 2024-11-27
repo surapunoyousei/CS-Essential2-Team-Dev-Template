@@ -28,7 +28,12 @@ class FrontendBuildHandler(FileSystemEventHandler):
 def run_servers():
     root_dir = Path(__file__).parent.absolute()
     frontend_dir = root_dir / "frontend"
-    python_path = os.path.join(root_dir, ".venv", "Scripts", "python.exe")
+    python_path = ""
+
+    if sys.platform == "win32":
+        python_path = os.path.join(root_dir, ".venv", "Scripts", "python.exe")
+    else:
+        python_path = os.path.join(root_dir, ".venv", "bin", "python")
 
     try:
         print("🔨 フロントエンドのビルドを行います...")

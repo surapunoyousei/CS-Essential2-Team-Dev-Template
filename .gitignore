@@ -1,1 +1,45 @@
+# Python/Django
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
 .venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.sqlite3
+db.sqlite3
+media/
+static/
+.coverage
+htmlcov/
+
+# Node/TypeScript
+node_modules/
+dist/
+build/
+.npm
+*.tsbuildinfo
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Project specific
+dev.py
